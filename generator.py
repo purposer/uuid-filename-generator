@@ -9,8 +9,7 @@ def rename_files():
         ext = os.path.splitext(filename)[1]
         if ext == ".txt":
             continue
-        id = uuid.uuid5(uuid.NAMESPACE_OID, filename)
-        os.rename(f"./folder/{filename}", f"./folder/{id}{ext}")
+        os.rename(f"./folder/{filename}", f"./folder/{uuid.uuid4()}{ext}")
 
 
 rename_files()
