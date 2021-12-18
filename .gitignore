@@ -1,2 +1,5 @@
 folder/*
 !folder/empty.txt
+
+.gitattributes
+.DS_Store
